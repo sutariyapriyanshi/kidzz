@@ -1,0 +1,124 @@
+/* *{
+    font-family: sans-serif;
+} */
+
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #04AA6D;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #04AA6D;
+    border-radius: 20px;
+    font-size:medium;
+    transition: background-color 0.3s ease;
+  }
+
+.button:hover {
+    background-color: #04AA6D;
+    transform: scale(1.05);
+    text-shadow: 0px 0px 1px rgb(241, 246, 214);
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+  }
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    margin-left: 10vh;
+    color: #04AA6D;
+    height: 50px;
+    border: 1px solid #04AA6D;
+    border-radius: 30px;
+    font-size:medium;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    /* background-color: #04AA6D; */
+    border: 2px solid #04AA6D;
+    transform: scale(1.05);
+    text-shadow: 0px 0px 1px rgb(241, 246, 214);
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+}
+
+.modal a{
+    text-decoration: none;
+    color: #04AA6D;
+    font-weight: 500;
+}
+
+.modal{
+    font-family:Arial, Helvetica, sans-serif;
+    width: 830px;
+    height: 240px;
+    position:fixed;
+    left: 50%;
+    top:-500px;
+    margin-top: 175px;
+    transform: translate(-50%,-50%);
+    /* box-shadow: 0px 0px 10px 2px #ccc; */
+    /* background-color:lightblue; */
+    /* background-image: url(Image/u.png); */
+    background-size: cover;
+    /* border: 2px solid #ccc; */
+    /* border-radius: 50px; */
+    transition: 0.5s;
+}
+
+.b1{
+    display: flex;
+}
+
+.b1 p{
+    margin-left: 35vh;
+}
+
+.content button:active{
+    overflow: hidden;
+}
+
+.modal h2{
+    /* text-align: center; */
+    border-bottom: 1px solid #ccc;
+    font-weight: normal;
+    font-size: 15px;
+    margin-top: 5px;
+    padding-bottom: 10px;
+    position: relative;
+    color: black;
+    /* background-color:lightblue; */
+    background-image: url(Image/bg.jpg);
+    background-size:cover;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px 2px #ccc;
+}
+
+.modal h2 span{
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    cursor: pointer;
+    font-size: 30px;
+    margin-right: 2vh;
+    color: red;
+}
+ 
+.modal p{
+    font-size: 15px;
+    color: black;
+    /* background-color:lightblue; */
+    /* border: 1px solid #ccc; */
+    border-radius: 10px;
+}
+
+.design{
+    font-weight: 600;
+    font-size: 30px;
+    font-style: italic;
+    color: darkslateblue;
+}
+
+.showModal{
+   top:300px; 
+} 

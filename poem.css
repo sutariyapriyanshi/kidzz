@@ -35,6 +35,10 @@ body{
 	margin-top: 25px;
 } 
 
+.poem-box:hover{
+    transform: scale(1.02); /* Add subtle hover effect */
+}
+
 .img-header{
     font-size:25px;
     font-weight: 600;

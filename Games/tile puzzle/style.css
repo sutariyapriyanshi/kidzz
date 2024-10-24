@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 1.5em;
+}
+
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 1em;
+    }
+}
+
+body {
+    font-size: 2rem;
+    background-color: #faa0bd; /* Background color */
+    font-family: Sans-Serif;
+}
+
+ol, ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+h3 {
+    margin-top: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(251, 236, 217);
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.3); 
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.SlidingPuzzle {
+    max-width: 95%;
+    width: 29rem;
+    background: #faa0bd;
+    border-radius: 0.3rem;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 0;
+}
+
+.Tile {
+    background: rgb(251, 236, 217); 
+    border-top: 0.3rem solid #ddd;
+    border-left: 0.3rem solid #ddd;
+    border-right: 0.3rem solid #ccc;
+    border-bottom: 0.3rem solid #ccc;
+    border-radius: 15px;
+    padding: 35% 0.2rem;
+    width: 9rem;
+    height: 9rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #faa0bd;
+}
+
+.moves {
+    font-size: 1rem;
+    margin: 1rem 1rem 1rem 0;
+    background: #f5dbbc;
+    padding: 0.6rem 0.8rem;
+    color: #c84b72;
+    border-radius: 1rem;
+    white-space: nowrap;
+    width: 160px;
+    height: 50px;
+}
+
+#movesnum {
+    /* background: #eee; */
+    padding: 0.2rem 0.5rem;
+    color: #c84b72;
+    border-radius: 0.3rem;
+    font-weight: bold;
+}
+
+button {
+    font-size: 0.8rem;
+    margin: 0.5rem;
+    padding: 0.5rem 0.8rem;
+    background-color: #f5dbbc;
+    color: #c84b72;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+    height: 50px;
+    white-space: nowrap;
+    width: 140px;
+    margin-top: 25px;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.2);
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+    section {
+        flex-direction: column;
+    }
+
+    .moves {
+        margin: 1rem 0 0.5rem 0;
+    }
+
+    .btn {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,425 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #fff;
+    height: 55px;
+}
+
+.user {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+}
+
+nav img{
+    position: absolute;
+    right: 150px;
+}
+
+nav p{
+    position: absolute;
+    right: 70px;
+}
+
+nav i{
+    font-size: 1.5rem;
+    position: absolute;
+    right: 200px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #ff69b4;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #ff4500;
+}
+
+.profile-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile-section .avatar {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+}
+
+.profile-section h2 {
+    font-size: 1.8rem;
+    margin-top: 10px;
+}
+
+.profile-section p {
+    color: #008080;
+    font-size: 1rem;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: #ffebcd;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card img {
+    width: 60px;
+    height: 60px;
+}
+
+.card h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #ff4500;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.games { background-color: #ffcccc; }
+.puzzle { background-color: #ccffcc; }
+.story { background-color: #ccccff; }
+.riddle { background-color: #ffccff; }
+.video { background-color: #ffffcc; }
+.poem { background-color: #ffdab9; }
+.learning { background-color: #bff9f9; }
+.knowledge { background-color: #ffc5c5; }
+.books { background-color: #fbc8e2; }
+
+
+/* Learning Path Section */
+.learning-path {
+    margin-top: 15px;
+    width: 90%;
+}
+
+.learning-path h2 {
+    font-size: 2rem;
+    color: #ff6f61;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.path {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.path-item {
+    background-color: #ffebcd;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    width: 22%;
+    height: 300px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.path-item:hover {
+    transform: scale(1.05);
+}
+
+.path-item img {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 10px;
+    display: flex;
+    align-self: center;
+}
+
+.path-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.path-item p{
+    margin-bottom: 10x;
+}
+
+.progress-section {
+    margin-top: auto;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 15px;
+    margin-bottom: 10px;
+}
+
+.progress {
+    background-color: #ff6f61;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.continue-btn {
+    padding: 10px 15px;
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-self: center;
+}
+
+.continue-btn:hover {
+    background-color: #ff4500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .path {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .path-item {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .path-item {
+        width: 100%;
+    }
+}
+
+
+/* Recommended Content */
+.recommended-content {
+    margin-bottom: 30px;
+}
+
+.recommended-content h3 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #ff4500;
+}
+
+.recommendation-list {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.recommendation-card {
+    background-color: #ffebcd;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.recommendation-card:hover {
+    transform: scale(1.1);
+}
+
+.recommendation-card img {
+    width: 60px;
+    height: 60px;
+}
+
+.recommendation-card h4 {
+    margin-top: 10px;
+    color: #ff4500;
+}
+
+/* Game Stats */
+.game-stats {
+    margin-top: 10px;
+}
+
+.game-stats h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #ff4500;
+}
+
+.stats-box {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #fff8dc;
+    border-radius: 15px;
+}
+
+.stats-box .stat {
+    text-align: center;
+}
+
+.stats-box .stat h4 {
+    color: #ff4500;
+    margin-bottom: 5px;
+}
+
+.past-activity {
+    margin-top: 10px;
+}
+
+.past-activity h3 {
+    color: #ff4500;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.activity-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.activity-card {
+    background-color: #ffebcd;
+    padding: 15px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.activity-card img {
+    width: 48px;
+    height: 48px;
+}
+
+.activity-card p {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.activity-date {
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.activity-card:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+
+/* 
+.features-section {
+    margin-top: 40px;
+    background-color: #f8f8ff;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.features-section h2 {
+    text-align: center;
+    color: #ff69b4;
+}
+
+.progress-bar {
+    margin-bottom: 20px;
+}
+
+.progress {
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 20px;
+}
+
+.progress-fill {
+    background-color: #ff4500;
+    height: 100%;
+    text-align: center;
+    line-height: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.daily-challenges ul {
+    list-style-type: none;
+}
+
+.daily-challenges li {
+    margin: 5px 0;
+    padding: 5px;
+    background-color: #f0e68c;
+    border-radius: 5px;
+}
+
+.personalized-learning, .ai-suggestions, .progressive-difficulty, .learning-style {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #e0f7fa;
+}
+
+.learning-style select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ff4500;
+    margin-top: 10px;
+}
+
+@media(max-width: 768px) {
+    .dashboard {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 500px) {
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+} */

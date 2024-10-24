@@ -1,0 +1,109 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: aquamarine;
+}
+.header img{
+    width: 90px;
+    height: 90px;
+}
+  
+.header {
+    display: flex;
+    font-family: cursive;
+    font-size: 50px;
+    color: #F41971; 
+    font-weight:bolder;
+	width: 100%;
+    height: 85px;
+	background-color: aquamarine;
+}
+
+.container{
+    display:block;
+    background-color:aquamarine; 
+    padding-top: 10px;
+    padding-left: 73vh;
+    justify-content: center;
+}
+
+.poem-box {
+    width: 420px; 
+    height: auto;
+    padding: 20px;
+    background-color:#F41971; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+	margin-top: 25px;
+} 
+
+.poem-box:hover{
+    transform: scale(1.02);
+}
+
+.img-header{
+    font-size:25px;
+    font-weight: 600;
+    font-family: cursive;
+    color: #F41971;
+    background-color: rgb(234, 165, 188);
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-header p{
+    text-shadow: 1px 1px 1px rgb(241, 246, 214);
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+} 
+
+.poem-content{
+    background-color: aquamarine;
+    height: auto;
+    margin-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    animation: fadeIn 1s ease-in-out;
+}
+.poem-content p {
+    padding-top: 5px;
+    color: #008000;
+    animation: fadeIn 1s ease-in-out;
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); 
+    }
+} 
+
+.section-panel{
+	display: flex;
+	flex-wrap: wrap;
+	background-color:aquamarine;  
+	justify-content: center;
+}
+
+.section-panel a{
+    text-decoration: none;
+    color: black;
+}

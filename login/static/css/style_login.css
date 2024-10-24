@@ -1,0 +1,200 @@
+body {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* background-color: #ffccf9; */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    /* animation: backgroundColorShift 5s infinite alternate; */
+}
+
+@keyframes backgroundColorShift {
+    0% { background-color: #ffccf9; }
+    100% { background-color: #ff99e6; }
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #ff33cc;
+    text-align: center;
+}
+
+@keyframes bounceIn {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+.login-container {
+    width: 350px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(50px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff33cc;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff6699;
+    transform: scale(1.05);
+}
+
+.login-container p {
+    color: #333;
+    font-size: 1rem;
+}
+
+.login-container a {
+    color: #ff33cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}
+
+.captcha-container {
+    margin: 15px 0;
+    padding: 10px;
+    background-color: #ffccf9;
+    border: 2px solid #ff33cc;
+    border-radius: 10px;
+}
+
+.bubble {
+    position: absolute;
+    background-color: rgba(255, 51, 204, 0.8);
+    border-radius: 50%;
+    opacity: 0.6;
+    animation: bubbleMove 10s infinite ease-in-out, bubbleScale 3s infinite alternate ease-in-out;
+}
+
+@keyframes bubbleMove {
+    0% {
+        transform: translate(0, 0);
+        opacity: 0.8;
+    }
+    25% {
+        transform: translate(100vw, -50vh);
+    }
+    50% {
+        transform: translate(-50vw, 50vh);
+    }
+    75% {
+        transform: translate(50vw, 50vh);
+    }
+    100% {
+        transform: translate(-100vw, -50vh);
+        opacity: 0;
+    }
+}
+
+@keyframes bubbleScale {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.5);
+    }
+}
+
+
+.form-holder {
+    position: relative;
+    margin-bottom: 21px; 
+  }
+ 
+  .form-holder span {
+      position: absolute;
+      left: 0;
+      top: 60%;
+      transform: translateY(-50%);
+      font-size: 15px;
+      color: #333; 
+  }
+
+  span i{
+    color: #666;
+  }
+  
+  .form-holder span.lnr-lock {
+        left: 2px; 
+  } 
+  
+  .form-control {
+    border: none;
+    border-bottom: 1px solid #666;
+    display: block;
+    width: 250px;
+    height: 38px;
+    background: none;
+    padding: 3px 42px 0px;
+    color: #666;
+    font-size: 16px; 
+  }
+  
+  .form-control::-webkit-input-placeholder {
+      font-size: 14px;
+      color: #999;
+      transform: translateY(1px); 
+  }
+    
+  .form-control::-moz-placeholder {
+      font-size: 14px;
+      color: #999;
+      transform: translateY(1px);
+  }
+    
+  .form-control:-ms-input-placeholder {
+      font-size: 14px;
+      color: #999;
+      transform: translateY(1px); 
+  }
+    
+  .form-control:-moz-placeholder {
+      font-size: 14px;
+      color: #999;
+      transform: translateY(1px); 
+  }
+    
+  .form-control:focus {
+      border-bottom: 1px solid #ff99e6; 
+      outline: none;
+  }
+  
+  .butterfly {
+    position: absolute; 
+    /* top: 460px;  */
+    /* left: -100px;  */
+    width: 100px; 
+    height: 100px; 
+    background-image: url('{{ url_for("static", filename="C:/Users/Priyanshi Sutariya/kidzz/login/static/images/planet.gif") }}'); /* Path to your butterfly GIF */
+    background-size: cover;
+    z-index: 2; 
+    animation: moveButterfly 15s linear infinite; 
+}

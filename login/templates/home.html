@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kidzz</title>
+    <!-- <link rel="icon" href="Image/Home/logo.png" type="image/png" id="size"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/learnmore.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <nav>
+    <div class="navbar">
+      <img src="Image/Home/logo.png" alt="logo">
+      <div class="nav-item color1">
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzOC40MzIiIGhlaWdodD0iMTkuMDM0IiB2aWV3Qm94PSIwIDAgMzguNDMyIDE5LjAzNCI+PGRlZnM+PHN0eWxlPi5he2ZpbGw6I2ZmZjt9LmJ7ZmlsbDojYTdkNjAwO30uY3tmaWxsOiMwMGNiZTg7fS5ke2ZpbGw6I2ZmMzc3ZTt9LmV7ZmlsbDojZjdkNTAyO30uZntmaWxsOiNhYWE5YTk7fS5ne2ZpbGw6IzA3YWI1Yzt9PC9zdHlsZT48L2RlZnM+PHBhdGggY2xhc3M9ImEiIGQ9Ik0xNjUuNjQyLDEyNy41NDNhMjIuMDIzLDIyLjAyMywwLDAsMC0xNy41NDIsMCw3Ljc0NCw3Ljc0NCwwLDAsMS05Ljc5NC0zLjAzMWgwYy0yLjE3LTMuMzU1LS4yNTEtOS42MTIsNS42NTUtMTIuMzMyYTMwLjM4NSwzMC4zODUsMCwwLDEsMjUuODI0LDBjNS45MDUsMi43Miw3LjI5Miw5LjU0Myw1LjExNywxMi45aDBDMTcyLjczNiwxMjguNSwxNjkuMzg1LDEyOS4wNDYsMTY1LjY0MiwxMjcuNTQzWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEzNy40NDEgLTEwOS4yOTkpIi8+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjUuNTYyIDYuMDMxKSI+PGNpcmNsZSBjbGFzcz0iYiIgY3g9IjEuNTA0IiBjeT0iMS41MDQiIHI9IjEuNTA0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg2LjA0IDMuMDIpIi8+PGNpcmNsZSBjbGFzcz0iYyIgY3g9IjEuNTA0IiBjeT0iMS41MDQiIHI9IjEuNTA0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIDMuMDIpIi8+PGNpcmNsZSBjbGFzcz0iZCIgY3g9IjEuNTA0IiBjeT0iMS41MDQiIHI9IjEuNTA0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzLjAyKSIvPjxjaXJjbGUgY2xhc3M9ImUiIGN4PSIxLjUwNCIgY3k9IjEuNTA0IiByPSIxLjUwNCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMy4wMiA2LjA0KSIvPjwvZz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxNy4wMDEgNy4xMDEpIj48cmVjdCBjbGFzcz0iZiIgd2lkdGg9IjQuNDI5IiBoZWlnaHQ9IjEuNTI3IiByeD0iMC4xODkiLz48cmVjdCBjbGFzcz0iZiIgd2lkdGg9IjQuNDI5IiBoZWlnaHQ9IjEuNTI3IiByeD0iMC4xODkiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMi41MikiLz48L2c+PHBhdGggY2xhc3M9ImciIGQ9Ik0xNDIuNjIzLDExMS41MTVsLTEuMTEyLDEuMTEyLTEuMTE2LTEuMTEyYS45MzkuOTM5LDAsMSwwLTEuMzMsMS4zMjZsMS4xMTYsMS4xMTYtMS4xMTYsMS4xMTFhLjk0Ljk0LDAsMCwwLDEuMzMsMS4zM2wxLjExNi0xLjExMiwxLjExMiwxLjExMmEuOTQuOTQsMCwxLDAsMS4zMy0xLjMzbC0xLjExMi0xLjExMSwxLjExMi0xLjExNmEuOTM5LjkzOSwwLDEsMC0xLjMzLTEuMzI2WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEzMy4zMjYgLTEwMy40KSIvPjwvc3ZnPg==" alt="game">
+        <a href="game.html">Game</a>
+      </div>
+      <div class="nav-item color2">
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyOC40NzciIGhlaWdodD0iMjEuNTk1IiB2aWV3Qm94PSIwIDAgMjguNDc3IDIxLjU5NSI+PGRlZnM+PHN0eWxlPi5he2ZpbGw6I2ZmZjt9LmJ7ZmlsbDojMDdjOTc0O30uY3tmaWxsOiNlMmUyZTI7fTwvc3R5bGU+PC9kZWZzPjxyZWN0IGNsYXNzPSJhIiB3aWR0aD0iMjguNDc3IiBoZWlnaHQ9IjIxLjU5NSIgcng9IjMiLz48cmVjdCBjbGFzcz0iYiIgd2lkdGg9IjI0LjkxNyIgaGVpZ2h0PSIxNS4xODgiIHJ4PSIyIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxLjc4IDEuNjYxKSIvPjxyZWN0IGNsYXNzPSJjIiB3aWR0aD0iMTIuODE0IiBoZWlnaHQ9IjEuNzgiIHJ4PSIwLjg5IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg3LjgzMSAxOC4zMTIpIi8+PHBhdGggY2xhc3M9ImEiIGQ9Ik0xODkuNTksMTE4LjIzMmwtNS4yNjIsMy40MThhLjkxNC45MTQsMCwwLDEtMS40MzItLjY5NHYtNi44NDRhLjkxNC45MTQsMCwwLDEsMS40MzItLjY5NGw1LjI2MiwzLjQxOEEuODE4LjgxOCwwLDAsMSwxODkuNTksMTE4LjIzMloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xNzIuMTk5IC0xMDguMjc5KSIvPjwvc3ZnPg==" alt="art">
+        <a href="#">Art</a>
+      </div>
+      <div class="nav-item color3">
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNC42MiIgaGVpZ2h0PSIzMC4xMjIiIHZpZXdCb3g9IjAgMCAyNC42MiAzMC4xMjIiPjxkZWZzPjxzdHlsZT4uYXtmaWxsOiNmMTljODM7fS5ie2ZpbGw6I2ZmZjt9LmN7ZmlsbDojMTY3ZjNmO30uZHtmaWxsOiMwNWNjMDA7fS5le2ZpbGw6I2VmZWQwMTt9PC9zdHlsZT48L2RlZnM+PHBhdGggY2xhc3M9ImEiIGQ9Ik0yMzMuMTQ1LDEyMi45NTVoMGEzLjA3OCwzLjA3OCwwLDAsMS0zLjA3OS0zLjA3NlYxMDIuNzUzbDMuMDc5LTkuOTIsMy4wNzYsOS45MnYxNy4xMjVBMy4wNzcsMy4wNzcsMCwwLDEsMjMzLjE0NSwxMjIuOTU1WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIzMC4wNjUgLTkyLjgzMykiLz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIDkuOTIpIj48cGF0aCBjbGFzcz0iYiIgZD0iTTIzNC4xNjMsOTYuMDM1bC0xLjAxOCwxLjAyMS0xLjAyMS0xLjAyMUwyMzEuMSw5Ny4wNTZsLTEuMDM3LTEuMDM3djE4Ljk2NmExLjIzNSwxLjIzNSwwLDAsMCwxLjIzNiwxLjIzNmgzLjY4NGExLjIzNSwxLjIzNSwwLDAsMCwxLjIzNi0xLjIzNlY5Ni4wMTlsLTEuMDM3LDEuMDM3WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIzMC4wNjUgLTk2LjAxOSkiLz48cGF0aCBjbGFzcz0iYyIgZD0iTTIzNC44LDk2LjAxOWgwWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIyMC4wNjIgLTk2LjAxOSkiLz48L2c+PHBhdGggY2xhc3M9ImIiIGQ9Ik0yMzEuOTY5LDkyLjgzM2wtMS4zNDgsNC4zNDVoMi43WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIyOC44OTEgLTkyLjgzMykiLz48cGF0aCBjbGFzcz0iYSIgZD0iTTIzNS4xMTgsMTIyLjk1NWgwYTMuMDc1LDMuMDc1LDAsMCwxLTMuMDc2LTMuMDc2VjEwMi43NTNsMy4wNzYtOS45MiwzLjA3OSw5LjkydjE3LjEyNUEzLjA3OCwzLjA3OCwwLDAsMSwyMzUuMTE4LDEyMi45NTVaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjI1Ljg4NiAtOTIuODMzKSIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDYuMTU2IDkuOTIpIj48cGF0aCBjbGFzcz0iYyIgZD0iTTIzNi4xNCw5Ni4wMzVsLTEuMDIxLDEuMDIxTDIzNC4xLDk2LjAzNWwtMS4wMjEsMS4wMjEtMS4wMzctMS4wMzd2MTguOTY2YTEuMjM1LDEuMjM1LDAsMCwwLDEuMjM2LDEuMjM2aDMuNjhhMS4yMzYsMS4yMzYsMCwwLDAsMS4yMzktMS4yMzZWOTYuMDE5bC0xLjAzNywxLjAzN1oiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yMzIuMDQyIC05Ni4wMTkpIi8+PHBhdGggY2xhc3M9ImMiIGQ9Ik0yMzYuNzc0LDk2LjAxOWgwWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIyMi4wMzkgLTk2LjAxOSkiLz48L2c+PHBhdGggY2xhc3M9ImMiIGQ9Ik0yMzMuOTQ1LDkyLjgzMywyMzIuNiw5Ny4xNzhoMi43WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIyNC43MTIgLTkyLjgzMykiLz48cGF0aCBjbGFzcz0iYSIgZD0iTTIzNy4xLDEyMi45NTVoMGEzLjA3NSwzLjA3NSwwLDAsMS0zLjA3Ni0zLjA3NlYxMDIuNzUzbDMuMDc2LTkuOTIsMy4wNzYsOS45MnYxNy4xMjVBMy4wNzUsMy4wNzUsMCwwLDEsMjM3LjEsMTIyLjk1NVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yMjEuNzA3IC05Mi44MzMpIi8+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTIuMzEyIDkuOTIxKSI+PHBhdGggY2xhc3M9ImQiIGQ9Ik0yMzguMTE3LDk2LjAzNSwyMzcuMSw5Ny4wNTZsLTEuMDIxLTEuMDIxLTEuMDE4LDEuMDIxLTEuMDM3LTEuMDM3djE4Ljk2NmExLjIzNSwxLjIzNSwwLDAsMCwxLjIzNiwxLjIzNmgzLjY4YTEuMjMzLDEuMjMzLDAsMCwwLDEuMjM2LTEuMjM2Vjk2LjAxOWwtMS4wMzcsMS4wMzdaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjM0LjAxOSAtOTYuMDE5KSIvPjwvZz48cGF0aCBjbGFzcz0iZCIgZD0iTTIzNS45MjIsOTIuODMzbC0xLjM0OCw0LjM0NWgyLjdaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjIwLjUzNCAtOTIuODMzKSIvPjxwYXRoIGNsYXNzPSJhIiBkPSJNMjM5LjA3NCwxMjIuOTU1aDBhMy4wNzgsMy4wNzgsMCwwLDEtMy4wNzktMy4wNzZWMTAyLjc1M2wzLjA3OS05LjkyLDMuMDc2LDkuOTJ2MTcuMTI1QTMuMDc1LDMuMDc1LDAsMCwxLDIzOS4wNzQsMTIyLjk1NVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yMTcuNTMxIC05Mi44MzMpIi8+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTguNDY0IDkuOTIxKSI+PHBhdGggY2xhc3M9ImUiIGQ9Ik0yNDAuMDkzLDk2LjAzNWwtMS4wMTgsMS4wMjEtMS4wMjEtMS4wMjEtMS4wMjEsMS4wMjEtMS4wMzctMS4wMzd2MTguOTY2YTEuMjM2LDEuMjM2LDAsMCwwLDEuMjM5LDEuMjM2aDMuNjhhMS4yMzUsMS4yMzUsMCwwLDAsMS4yMzYtMS4yMzZWOTYuMDE5bC0xLjAzNywxLjAzN1oiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yMzUuOTk1IC05Ni4wMTkpIi8+PC9nPjxwYXRoIGNsYXNzPSJlIiBkPSJNMjM3LjksOTIuODMzbC0xLjM0OCw0LjM0NWgyLjdaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjE2LjM1NSAtOTIuODMzKSIvPjwvc3ZnPg==" alt="learning">
+        <a href="learn.html">Learning</a>
+      </div>
+      <div class="nav-item color4">
+        <img src="https://img.icons8.com/color/64/000000/open-book.png" alt="muppets">
+        <a href="knowledge.html">Knowledge</a>
+      </div>
+      <div class="nav-item color5">
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMi43MDQiIGhlaWdodD0iMjEiIHZpZXdCb3g9IjAgMCAyMi43MDQgMjEiPjxkZWZzPjxzdHlsZT4uYXtmaWxsOiNmZmY7fTwvc3R5bGU+PC9kZWZzPjxwYXRoIGNsYXNzPSJhIiBkPSJNNDI2LjQsMzEzLjUxOGE1Ljk2OCw1Ljk2OCwwLDAsMC01LjM3NiwzLjM4Myw1Ljk3MSw1Ljk3MSwwLDAsMC0xMS4zNTIsMi41OTJjMCw3LjIsMTEuMzUyLDE1LjAyNSwxMS4zNTIsMTUuMDI1czExLjM1Mi04LDExLjM1Mi0xNS4wMjVBNS45NzUsNS45NzUsMCwwLDAsNDI2LjQsMzEzLjUxOFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC00MDkuNjc0IC0zMTMuNTE4KSIvPjwvc3ZnPg==" alt="favorites">
+        <a href="favourite.html">Favorites</a>
+      </div>
+      <a id="sign" href="C:\Users\Priyanshi Sutariya\kidzz\login\templates\index.html">Sign In</a>
+      <a href="profile.html" id="profile">Profile</a>
+      <i class="fa-solid fa-bars fa-2xs" style="color: rgb(84, 88, 90)" id="sidebar-toggle"></i>
+    </div>
+  </nav>
+    <div id="sidebar">
+      <span>&times;</span> 
+      <br>
+      <i class="fa-solid fa-circle-user fa-2xl"></i>
+      <ul>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="#">Security</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">Feedback</a></li>
+          <li><a href="#">Sign Out</a></li>
+          <li><a href="#">Settings</a></li>
+      </ul>
+    </div> 
+
+    <!-- 
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-close">
+          <i class="fa-solid fa-xmark"></i>
+      </div>
+      <div class="profile">
+        <i class="fa-solid fa-circle-user fa-2xl"></i>
+        <a href="#">Profile</a>
+      </div>
+      <ul>
+        <li>
+          <i class="fa-solid fa-user-shield"></i>
+          <a href="#">Security</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-lock"></i>
+          <a href="#">Privacy</a>
+        </li- ->
+        <li>
+          <i class="fa-solid fa-circle-info"></i>
+          <a href="#">Help</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-comment"></i>
+          <a href="#">Feedback</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-arrow-right-from-bracket"></i>
+          <a href="#">Sign Out</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-cog"></i>
+          <a href="#">Settings</a>
+        </li>
+      </ul>
+    </div> -->
+    <div class="water">
+      <div class="sun"></div>
+      <div class="rays"></div>
+      <div class="bird"></div>
+      <div class="sand"></div>
+      <div class="flower"></div>
+      <div class="butterfly"></div>
+      <div class="boat"></div>
+      <div class="tree"></div>
+      <div class="kid"></div>
+      <div class="star"></div>
+      <div class="seashell"></div>
+      <div class="snail"></div>
+      <div class="water-wave"></div>
+      <div class="fish"></div>
+      <div class="fish-swim"></div>
+      <div class="gippy"></div>
+      <div class="clouds">
+        <div class="cloud cloud-1"></div>
+        <div class="cloud cloud-2"></div>
+        <div class="cloud cloud-3"></div>
+      </div>
+    </div>
+    <main>
+      <div class="cont">
+        <div class="content">
+          <h1>Kidzz</h1>
+          <h2>Igniting Bright Ideas Where Learning Meets Fun for Little Dreamers!</h2>
+          <p>Need help? The Mecha Builders will be there on the double to "plan it, test it, solve it!" Join Elmo, Cookie Monster, and Abby Cadabby as robot heroes-in-training...with amazing STEM superpowers! Plus, these heroes help problem-solve the dilemma of getting big and little ones to watch and learn together, while laughing along with Sesame Street friends.</p>
+          <div class="modal">
+            <h2> Learn and Explore more 
+                <span>&times;</span>
+            <p>Put your brain to the test with challenging puzzles and riddles.</p>
+            <p>Explore different paths and find your passion</p>
+            <p>Relax and have fun with our collection of entertaining videos.</p>
+            <div class="b1">
+              <p class="design">Explore kidzz with me</p>
+              <button class="btn"><a href="home.html">Continue</a></button>
+            </div>
+          </div>
+          <button class="show button">Learn More</button>
+        </div>
+        <img src="Image/Home/cartoon.png" alt="Mecha Builders" class="image">
+      </div>
+      <div class="container">
+        <div class="box">
+          <img src="https://i.imgur.com/R9o4w8A.png" alt="Image 1">
+        </div>
+        <div class="box">
+          <img src="https://i.imgur.com/8v4W13M.png" alt="Image 2">
+        </div>
+        <div class="box">
+          <img src="https://i.imgur.com/U19tH12.png" alt="Image 3">
+        </div>
+        <div class="box">
+          <img src="https://i.imgur.com/r0yJ0s1.png" alt="Image 4">
+        </div>
+        <div class="box">
+          <img src="https://i.imgur.com/gU0wT7R.png" alt="Image 5">
+        </div>
+        <div class="box">
+          <img src="https://i.imgur.com/l2X0d5H.png" alt="Image 6">
+        </div>
+        <div class="box">
+          <img src="https://i.imgur.com/9U3dK9O.png" alt="Image 7">
+        </div>
+        <div class="box">
+          <img src="https://i.imgur.com/U3l8Z3B.png" alt="Image 8">
+        </div>
+        <div class="box">
+          <img src="https://i.imgur.com/wM0nV3A.png" alt="Image 9">
+        </div>-
+      </div>    
+      <div class="fun">
+      <div class="row1">
+        <a class="phat-button show-all" href="game.html">
+          <em>
+            <i class="icon"></i> 
+            <span>All Games</span>
+          </em>
+        </a>
+        <a class="phat-button show-all" href="video.html">
+          <em>
+            <i class="icon"></i> 
+            <span>Videos</span>
+          </em>
+        </a>
+        <a class="phat-button show-all" href="learn.html">
+          <em>
+            <i class="icon"></i> 
+            <span>Education</span>
+          </em>
+        </a>
+        <a class="phat-button show-all" href="riddles.html">
+          <em>
+            <i class="icon"></i> 
+            <span>Riddles</span>
+          </em>
+        </a>
+      </div>
+      <div class="row2">
+        <a class="phat-button show-all" href="book.html">
+          <em>
+            <i class="icon"></i> 
+            <span>Books</span>
+          </em>
+        </a>
+        <a class="phat-button show-all" href="puzzle.html">
+          <em>
+            <i class="icon"></i> 
+            <span>Puzzle</span>
+          </em>
+        </a>
+        <a class="phat-button show-all" href="poem.html">
+          <em>
+            <i class="icon"></i> 
+            <span>Poem</span>
+          </em>
+        </a>
+      </div>
+      <div class="row4">
+        <a class="phat-button show-all" href="story.html">
+          <em>
+            <i class="icon"></i> 
+            <span>Stories</span>
+          </em>
+        </a>
+        <a class="phat-button show-all" href="knowledge.html">
+          <em>
+            <i class="icon"></i> 
+            <span>knowledge</span>
+          </em>
+        </a>
+      </div>
+    </div>
+    </main>
+    <footer class="foot">
+      <div class="foot-panel2">
+        <ul>
+          <a>Careers</a>
+          <a>Blog</a>
+          <a>About Kidzz</a>
+        </ul>
+        
+        <ul>
+          <a>App</a>
+          <a>Conditions of Use</a>
+          <a>Privacy Notice</a>
+          <a>Your Ads Privacy Choices</a>
+          <a><i class="fa-solid fa-angle-right"></i>  See More</a>
+        </ul>
+        
+        <ul>
+          <a href="learn.html">Learning</a>
+          <a href="game.html">Game</a>
+          <a>Manage Your Content and Devices</a>
+          <a>Help</a>
+        </ul>
+      </div>
+      <div class="foot-panel3">
+          <div class="logo">
+              <div class="bt">
+                  <div class="eng">
+                      <i class="fa-solid fa-globe"></i>
+                      <input type="number" id="eng" placeholder="English">
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="foot-panel4">
+          <div class="page">
+            Igniting Bright Ideas Where Learning Meets Fun for Little Dreamers!
+          </div>
+          <div class="copy">
+              &copy; 2024,Kidzz |  All Rights Reserved. Kidzz and all related titles and logos are trademarks of Inc.
+          </div>
+      </div>
+  </footer>
+</body>
+<script src="{{ url_for('static', filename='js/learnmore.js') }}"></script>
+<script src="{{ url_for('static', filename='js/sidebar.js') }}"></script>
+</html>
